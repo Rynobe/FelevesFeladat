@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace D2774A_FelevesFeladat
 {
-    class BundásKenyér
+    interface IAllergén
     {
-
+        public string Nev { get;}
+        public string Reakcio { get;}
     }
 }

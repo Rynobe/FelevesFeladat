@@ -10,6 +10,7 @@ namespace D2774A_FelevesFeladat
     {
         public Kenyér(string _neve, double _szenhidrat, double _feherje, double _zsir, double _rost, int _kaloria) : base(_neve,_szenhidrat,_feherje,_zsir,_rost,_kaloria)
         {
+
         }
     }
 }

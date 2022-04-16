@@ -8,7 +8,7 @@ namespace D2774A_FelevesFeladat
 {
     interface ITápanyag
     {
-        public string Neve { get;}
+        public string Nev { get;}
         public double Szenhidrat { get;}
         public double Feherje { get;}
         public double Zsir { get;}

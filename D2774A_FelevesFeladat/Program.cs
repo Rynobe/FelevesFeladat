@@ -1,4 +1,5 @@
 ﻿using System;
+using D2774A_FelevesFeladat.Lists;
 
 namespace D2774A_FelevesFeladat
 {
@@ -6,8 +7,16 @@ namespace D2774A_FelevesFeladat
     {
         static void Main(string[] args)
         {
-            Eletmod etel1 = new Eletmod("Tojas", "Kiütés", 0.3, 5.4, 4.8, 0.6, 66);
-            Eletmod etel2 = new Eletmod("Tojas", "Kiütés", 0.3, 5.4, 4.8, 0.6, 66);
+            AllergenLista<IAllergén> teszt = new AllergenLista<IAllergén>();
+            teszt.Beszuras(new Tojas("teszt1"));
+            teszt.Beszuras(new Tojas("teszt2"));
+            teszt.Bejar(Kiir);
+            
+        }
+
+        public static void Kiir(IAllergén allergen)
+        {
+            Console.WriteLine(allergen);
         }
     }
 }
